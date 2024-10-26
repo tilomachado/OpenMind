@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforme Seu Facebook em Máquina de Vendas!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icone.png" type="image/png">
+    
+    <meta name="description" content="Assista ao vídeo sobre Renda Extra e aprenda dicas valiosas.">
+    <meta name="keywords" content="Renda Extra, dicas, vídeo, comunidade">
+    <meta name="author" content="Tilo Machado">
+  <!-- Código do Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GDDY8TGYQV"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-GDDY8TGYQV');
+  </script>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff00, #32cd32);
+            animation: progress-animation 79s linear forwards; /* 1m 19s = 79s */
+        }
+
+        @keyframes progress-animation {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Máquina de Vendas no Facebook</h1>
+        <p>A ferramenta definitiva para impulsionar suas vendas online!</p>
+    </header>
+
+    <div class="container">
+        <section class="video-vsl">
+            <iframe src="https://www.youtube.com/embed/38_zZTlPMIE?controls=0" allowfullscreen></iframe>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </section>
+
+        <section class="intro hidden">
+            <p>Descubra como transformar sua conta de Facebook em uma poderosa máquina de vendas. Aprenda a configurar uma página, aquecer sua conta e interagir estrategicamente para atrair clientes em todo o mundo.</p>
+        </section>
+
+        <img src="facebook-setup.webp" alt="Imagem Ilustrativa" class="kelcia-img hidden">
+       
+        <section class="features hidden">
+            <h2>O que você aprenderá neste Mini Curso?</h2>
+            <ul>
+                <li>✅ Como criar uma conta de negócios no Facebook.</li>
+                <li>✅ Configuração profissional da sua página.</li>
+                <li>✅ Estratégias para aquecer sua conta com interações e postagens.</li>
+                <li>✅ Ferramentas para aumentar suas vendas de forma automática.</li>
+            </ul>
+        </section>
+
+        <section class="cta hidden">
+            <h2>Pronto para turbinar suas vendas?</h2>
+            <img src="Captura de ecrã 2024-10-25 104203.png" alt="Estratégia de Marketing" class="kelcia-img">
+            
+            <p>Não perca a oportunidade de transformar sua presença digital. Entre agora na comunidade e comece a aprender com outros profissionais.</p>
+            <img src="strategy.webp" alt="Estratégia de Marketing" class="kelcia-img">
+            <div class="btn-container">
+                <a href="https://chat.whatsapp.com/BH1JgPT0yReL294UZxX9nR" class="btn-principal">Junte-se Agora</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Mini Curso OpenMind. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Após 30 segundos, mostra o conteúdo oculto
+        setTimeout(function() {
+            document.querySelector('.intro').classList.remove('hidden');
+            document.querySelector('.kelcia-img').classList.remove('hidden');
+            document.querySelector('.features').classList.remove('hidden');
+            document.querySelector('.cta').classList.remove('hidden');
+        }, 70000);
+
+        // Ocultar a barra de progresso e o vídeo após 90 segundos
+        setTimeout(function() {
+            document.querySelector('.progress-container').style.display = 'none';
+            document.querySelector('.video-vsl iframe').style.display = 'none'; // Ocultar o iframe do vídeo
+        }, 90000); // 90 segundos
+    </script>
+</body>
+</html>
